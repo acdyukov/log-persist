@@ -1,8 +1,14 @@
 dependencies {
-	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib", version: "3.1.0"
-	compileOnly group: "com.liferay", name: "com.liferay.osgi.util", version: "3.0.0"
-	compileOnly group: "com.liferay", name: "com.liferay.portal.spring.extender", version: "2.0.0"
-	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "2.6.0"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel",
+			version: "${property('com.liferay.portal.kernel.version')}"
+	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib",
+			version: "${property('biz.aQute.bndlib.version')}"
+	compileOnly group: "com.liferay", name: "com.liferay.osgi.util",
+			version: "${property('com.liferay.osgi.util.version')}"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.spring.extender",
+			version: "${property('com.liferay.portal.spring.extender.version')}"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string",
+			version: "${property('com.liferay.petra.string.version')}"
 	compileOnly project(":modules:logging-config-persistence-api")
 }
 
